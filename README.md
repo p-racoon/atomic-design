@@ -110,4 +110,13 @@ _Pages also provide a place to articulate variations in templates, which is cruc
 
 For more details [Click here](http://atomicdesign.bradfrost.com/chapter-2/#pages)
 
+- - - -
+
+**Update**: Not everyone is well versed with Chemistry and Biology, and developers(Who would be dealing with this the most) might get confused with an unconventional naming convention, hence after talking to other members and mentors, we took 2 major decisions:-
+* Merge Organisms and Molecules into one folder, since they were the most confusing ones to diffrentiate between.
+* Rename the folders to something developers were already aware of and could relate to.
+  * src/Elements -- alias for atoms
+  * src/Components -- alias for molecules and oranisms put together
+  * src/Views -- alias for Templates
+  * src/Containers -- alias for Pages
 
