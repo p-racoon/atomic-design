@@ -1,3 +1,5 @@
+***Note: Most of the content here is 'my' opinion and understanding of how Atomic Design can be implemented with React, based on the discussions that we had with, Mentors and members of our team while working together on a project at Pesto Tech***
+
 # atomic-design
 
 # 'src/components'
@@ -10,6 +12,7 @@ Its majorly divided into 5 parts:-
 - organisms (Group of molecules and/or HTML elements)
 - templates (Group of organisms and Molecules without any props or Data)
 - pages (Templates with Data)
+
 
 - Atoms are UI elements that can’t be broken down any further and serve as the elemental building blocks of an interface.
 - Molecules are collections of atoms that form relatively simple UI components.
@@ -25,10 +28,10 @@ Templates are page-level objects that place components into a layout and articul
 
 # 'src/components/atoms'
 
-> Should Ideally be an empty folder.
+> Would generally be an empty folder. But can have Proxy components for a more librarized code
 
 These atoms include [basic HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) like form labels, inputs, buttons, and others that can’t be broken down any further without ceasing to be functional.
-Ideally this folder should contain nothing, as HTML elements are **the** unbreakable building blocks upon which all Higher order components are built upon.
+Generally this folder would contain nothing, as HTML elements are **the** unbreakable building blocks upon which all Higher order components are built upon. But in case of React, Atoms could be the Proxy components, built upon React Elements to provide consistency and a librarised form of an Element. "We can write a higher level component to proxy props to a lower-level component" [Source- Proxy Component](https://reactpatterns.com/)(React Element).
 In fact there is a [Periodic table mentioning basic HTML elements](http://atomicdesign.bradfrost.com/images/content/html-periodic-table.png).
 For more details [Click here](http://atomicdesign.bradfrost.com/chapter-2/#atoms)
 
